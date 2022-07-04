@@ -1,0 +1,189 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(051,051,051,0.8),rgba(051,051,051,0.8)),url(images/isedol1.jpg);
+    background-size: cover;
+}
+
+.container .header {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header h1 a {
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+}
+
+.container .header h1 a:hover {
+   color: #34BAA2;
+}
+.container .header ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container .header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .header ul li .ine:hover {
+    color: #8a2be2;
+}
+
+.container .header ul li .jing:hover {
+    color: #f0a957;
+}
+
+.container .header ul li .lipa:hover {
+    color: #000080;
+}
+
+.container .header ul li .ju:hover {
+    color: #800080;
+}
+
+.container .header ul li .go:hover {
+    color: #467ec6;
+}
+
+.container .header ul li .vii:hover {
+    color: #85ac20;
+}
+
+.container .idol {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .idol h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.container .idol p {
+    font-size: 15px;
+}
+
+.container .idol button {
+    background: none;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding: 10px 12px;
+    margin-top: 30px;
+}
+
+.container .idol button a {
+    color: white;
+    text-decoration: none;
+}
+
+.container .idol button:hover {
+    background-color: #66CCCC;
+    transition: all 1s;
+}
+
+.container .header .toggle {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    right: 22px;
+    display: none;
+}
+
+@media (max-width : 620px) {
+    .container .header{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding: 8px 12px; */
+    }
+    .container .header h1 {
+        padding: 8px 12px;
+    }
+    .container .header ul {
+        border-top: solid 3px green;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .container .header ul li {
+        flex-direction: column;
+        display: block;
+        align-items: center;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .container .header ul li a {
+        display: block;
+        width: 100%;
+    }
+    .container .header ul li .ine:hover {
+        background-color: #8a2be2;
+        color: white;
+        padding: 8px;
+    }
+    
+    .container .header ul li .jing:hover {
+        background-color: #f0a957;
+        color: white;
+        padding: 8px;
+    }
+    
+    .container .header ul li .lipa:hover {
+        background-color: #000080;
+        color: white;
+        padding: 8px;
+    }
+    
+    .container .header ul li .ju:hover {
+        background-color: #800080;
+        color: white;
+        padding: 8px;
+    }
+    
+    .container .header ul li .go:hover {
+        background-color: #467ec6;
+        color: white;
+        padding: 8px;
+    }
+    
+    .container .header ul li .vii:hover {
+        background-color: #85ac20;
+        color: white;
+        padding: 8px;
+    }
+    .container .header .toggle {
+        display: inline;
+        padding: 12px;
+    }
+    .container .header ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+    .idol{
+        display: none;
+    }
+}
